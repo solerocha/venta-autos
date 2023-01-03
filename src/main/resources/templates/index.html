@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Tienda de Venta de Autos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda de ventas de Autos</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <header class="body-header">
+                <h1>Venta de Autos</h1>
+            </header>
+
+            <div class="container mt-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Modelo</th>
+                            <th>Marca</th>
+                            <th>Motor</th>
+                            <th>Color</th>
+                            <th>Patente</th>
+                            <th>Nro de puertas</th>
+                            <th>Año</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="auto:${getAutos()}">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer class="body-footer">
+
+            </footer>                        
+        </div>
+    </body>
+</html>
